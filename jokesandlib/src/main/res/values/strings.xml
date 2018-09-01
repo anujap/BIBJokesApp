@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">jokesandlib</string>
+    <string name="title_joke">Joke</string>
+    <string name="error_joke">No joke to display</string>
+</resources>
