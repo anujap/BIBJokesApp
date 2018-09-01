@@ -38,6 +38,6 @@ public class JokesProvider {
         jokesList.add("Question: Where are average things manufactured? Answer: The satisfactory.");
         jokesList.add("Question: What sits at the bottom of the sea and twitches? Answer: A nervous wreck.");
         jokesList.add("Question: What does a nosy pepper do? Answer: Gets jalapeno business!");
-        jokesList.add("A man tells his doctor, Doc, help me. I am addicted to Twitter!” The doctor replies, “Sorry, I do not follow you.");
+        jokesList.add("A man tells his doctor, Doc, help me. I am addicted to Twitter! The doctor replies, Sorry, I do not follow you.");
     }
 }
