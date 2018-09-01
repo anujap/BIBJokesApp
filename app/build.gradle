@@ -65,3 +65,28 @@ dependencies {
     })
     testImplementation 'junit:junit:4.12'
 }
+
+task startAppEngine {
+    dependsOn ':backend:appengineStart'
+    doLast {
+        println 'Server started'
+    }
+}
+
+task stopAppEngine {
+    dependsOn ':backend:appengineStop'
+    doLast {
+        println 'Server stopped'
+    }
+}
+
+task runTests {
+    dependsOn 'test', 'connectedAndroidTest'
+}
+
+task executeAllTests {
+    dependsOn startAppEngine
+    finalizedBy runTests, stopAppEngine
+}
+
+

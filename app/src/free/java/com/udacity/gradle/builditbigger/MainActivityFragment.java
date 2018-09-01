@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -77,10 +76,18 @@ public class MainActivityFragment extends Fragment implements View.OnClickListen
 
     @Override
     public void onResponseReceived(String jokeStr) {
-        Log.i("Test", "onresponse received: " + jokeStr);
         progressBar.setVisibility(View.GONE);
         Intent intent = new Intent(getActivity(), JokesActivity.class);
         intent.putExtra(JokesActivity.JOKE_KEY_EXTRA, jokeStr);
         startActivity(intent);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        // to avoid unnecessary creation of async task
+        if(jokesAsyncTask != null) {
+            jokesAsyncTask.cancel(true);
+        }
     }
 }

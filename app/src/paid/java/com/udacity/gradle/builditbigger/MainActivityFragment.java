@@ -12,8 +12,6 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.jokesandlib.JokesActivity;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 import com.udacity.gradle.builditbigger.background.JokesAsyncTask;
 import com.udacity.gradle.builditbigger.connectivity.ConnectivityChecker;
 
@@ -70,5 +68,14 @@ public class MainActivityFragment extends Fragment implements View.OnClickListen
         Intent intent = new Intent(getActivity(), JokesActivity.class);
         intent.putExtra(JokesActivity.JOKE_KEY_EXTRA, jokeStr);
         startActivity(intent);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        // to avoid unnecessary creation of async task
+        if(jokesAsyncTask != null) {
+            jokesAsyncTask.cancel(true);
+        }
     }
 }

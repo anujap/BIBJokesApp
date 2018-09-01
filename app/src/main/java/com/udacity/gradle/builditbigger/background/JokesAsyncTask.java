@@ -2,7 +2,6 @@ package com.udacity.gradle.builditbigger.background;
 
 import android.os.AsyncTask;
 import android.text.TextUtils;
-import android.util.Log;
 
 import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.extensions.android.json.AndroidJsonFactory;
@@ -47,7 +46,6 @@ public class JokesAsyncTask extends AsyncTask<Void, Void, String> {
         } catch (IOException e) {
             return e.getMessage();
         }
-        //return "";
     }
 
     @Override
