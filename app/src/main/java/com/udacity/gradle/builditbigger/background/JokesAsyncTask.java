@@ -2,6 +2,7 @@ package com.udacity.gradle.builditbigger.background;
 
 import android.os.AsyncTask;
 import android.text.TextUtils;
+import android.util.Log;
 
 import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.extensions.android.json.AndroidJsonFactory;
@@ -18,7 +19,7 @@ public class JokesAsyncTask extends AsyncTask<Void, Void, String> {
 
     private OnResponseListener listener = null;
 
-    interface OnResponseListener {
+    public interface OnResponseListener {
         void onResponseReceived(String jokeStr);
     }
 
@@ -44,14 +45,16 @@ public class JokesAsyncTask extends AsyncTask<Void, Void, String> {
         try {
             return myApiService.getRandomJoke().execute().getData();
         } catch (IOException e) {
-            e.getMessage();
+            return e.getMessage();
         }
-        return "";
+        //return "";
     }
 
     @Override
     protected void onPostExecute(String s) {
-        if(listener != null && !TextUtils.isEmpty(s))
+        if(listener != null && !TextUtils.isEmpty(s)) {
             listener.onResponseReceived(s);
+        }
+
     }
 }
