@@ -44,8 +44,10 @@ public class JokesAsyncTask extends AsyncTask<Void, Void, String> {
         try {
             return myApiService.getRandomJoke().execute().getData();
         } catch (IOException e) {
-            return e.getMessage();
+            System.out.println(e.getMessage());
         }
+
+        return "";
     }
 
     @Override
