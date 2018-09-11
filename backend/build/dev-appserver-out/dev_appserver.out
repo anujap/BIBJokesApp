@@ -1,33 +1,24 @@
 Warning: Google App Engine Java 7 runtime is deprecated.
 Warning: See https://cloud.google.com/appengine/docs/deprecations/java7
-Sep 01, 2018 3:31:57 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+Sep 11, 2018 2:46:59 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
 INFO: Overwriting system property key 'java.util.logging.config.file', value 'C:\Users\Anuja\AppData\Local\Google\Cloud SDK\google-cloud-sdk\platform\google_appengine\google\appengine\tools\java\config\sdk\logging.properties' with value 'WEB-INF/logging.properties' from 'C:\Users\Anuja\Documents\UdacityGoogleDeveloperChallengeScholarship\Phase2\BIBJokesApp\backend\build\exploded-backend\WEB-INF\appengine-web.xml'
-Sep 01, 2018 3:31:57 PM com.google.apphosting.utils.jetty.JettyLogger info
+Sep 11, 2018 2:46:59 PM com.google.apphosting.utils.jetty.JettyLogger info
 INFO: Logging to JettyLogger(null) via com.google.apphosting.utils.jetty.JettyLogger
-Sep 01, 2018 8:31:57 PM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
-WARNING: Your working directory, (C:\Users\Anuja\Documents\UdacityGoogleDeveloperChallengeScholarship\Phase2\BIBJokesApp) is not equal to your 
+Sep 11, 2018 7:47:00 PM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
+WARNING: Your working directory, (C:\Users\Anuja\Documents\UdacityGoogleDeveloperChallengeScholarship\Phase2\BIBJokesApp\backend) is not equal to your 
 web application root (C:\Users\Anuja\Documents\UdacityGoogleDeveloperChallengeScholarship\Phase2\BIBJokesApp\backend\build\exploded-backend)
 You will not be able to access files from your working directory on the production server.
 
-Sep 01, 2018 8:31:57 PM com.google.apphosting.utils.jetty.JettyLogger info
+Sep 11, 2018 7:47:00 PM com.google.apphosting.utils.jetty.JettyLogger info
 INFO: jetty-6.1.x
-Sep 01, 2018 8:31:59 PM com.google.apphosting.utils.jetty.JettyLogger info
+Sep 11, 2018 7:47:02 PM com.google.apphosting.utils.jetty.JettyLogger info
 INFO: Started SelectChannelConnector@localhost:8080
-Sep 01, 2018 8:31:59 PM com.google.appengine.tools.development.AbstractModule startup
+Sep 11, 2018 7:47:02 PM com.google.appengine.tools.development.AbstractModule startup
 INFO: Module instance default is running at http://localhost:8080/
-Sep 01, 2018 8:31:59 PM com.google.appengine.tools.development.AbstractModule startup
+Sep 11, 2018 7:47:02 PM com.google.appengine.tools.development.AbstractModule startup
 INFO: The admin console is running at http://localhost:8080/_ah/admin
-Sep 01, 2018 3:31:59 PM com.google.appengine.tools.development.DevAppServerImpl doStart
+Sep 11, 2018 2:47:02 PM com.google.appengine.tools.development.DevAppServerImpl doStart
 INFO: Dev App Server is now running
-Sep 01, 2018 3:32:04 PM com.google.appengine.repackaged.com.google.protobuf.UnsafeUtil supportsUnsafeByteBufferOperations
-WARNING: platform method missing - proto runtime falling back to safer methods: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.sun.misc")
-Sep 01, 2018 3:32:04 PM com.google.appengine.repackaged.com.google.protobuf.UnsafeUtil supportsUnsafeArrayOperations
-WARNING: platform method missing - proto runtime falling back to safer methods: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.sun.misc")
-Joke Random is: Question Did you hear about the actor who fell through the floorboards? Answer He was just going through a stage.
-Joke Random is: Question Why do we tell actors to break a leg? Answer Because every play has a cast.
-Joke Random is: Helvetica and Times New Roman walk into a bar. Get out of here shouts the bartender. We do not serve your type.
-Sep 01, 2018 3:42:26 PM com.google.appengine.tools.development.AbstractModule shutdown
-INFO: Shutting down module instance default
-Shutting down.
-Sep 01, 2018 3:42:26 PM com.google.appengine.api.datastore.dev.LocalDatastoreService cleanupActiveServices
-INFO: scheduler shutting down.
+Joke Random is: Question What does a nosy pepper do? Answer Gets jalapeno business
+Joke Random is: Question What does a nosy pepper do? Answer Gets jalapeno business
+Joke Random is: Question Did you hear about the claustrophobic astronaut? Answer He just needed a little space.
